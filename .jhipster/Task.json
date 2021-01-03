@@ -1,0 +1,43 @@
+{
+  "name": "Task",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "test1",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "test2",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "task",
+      "relationshipName": "job",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210103115749",
+  "javadoc": "Task entity.\\n@author The JHipster team.",
+  "entityTableName": "task",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
